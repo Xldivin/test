@@ -37,7 +37,7 @@ export const createDriver = async(req, res) => {
     const driver = await pool.query(
         `SELECT * FROM public."Users" WHERE email LIKE '%${email}%' LIMIT 1`
     );
-    if (!driver.rowCount) {
+    if (driver.rowCount) {
         return res
             .status(401)
             .json({ success: false, message: `The driver is already registered!` });

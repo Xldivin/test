@@ -28,14 +28,14 @@ describe("GET API /api/v1/drivers", () => {
 describe("POST API /api/v1/drivers", () => {
     const userData = {
         name: "Habimana",
-        email: "ben@gmail.com",
+        email: "hubz@gmail.com",
         id_number: "1111111111111116",
         permit_id: "1111111111111117",
         phone: "780000004",
     };
     const userDataTwo = {
         name: "Testing names",
-        email: "mavenge@gmail.com",
+        email: "prince@gmail.com",
         id_number: "1111111111111112",
         permit_id: "1111111111111113",
         phone: "780000001",
